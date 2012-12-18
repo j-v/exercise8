@@ -4,7 +4,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{moreverb}
+%\usepackage{moreverb}
 
 \setlength{\parindent}{0pt}
 
@@ -27,13 +27,13 @@ examples to illustrate the difference.
 \textbf{Answer:}
 OWL is more expressive than RDFS: with OWL we can define relations between classes, constraints and cardinalities, equivalences of classes and properties, create properties of properties, use boolean combinations and other expressive constructs (e.g. disjointnes, inverse properties, property restrictions, enumerations). Also, special properties can be expressed, namely transitive, symmetric, functional, and inverse functional properties. However, some RDF markup is preserved in OWL, and instances of classes are declared in RDF. An example of a transitive property that cannot be expressed in RDFS:
 
-\begin{verbatimtab}
+\begin{verbatim}
 <owl:ObjectProperty rdf:ID="subRegionOf">
   <rdf:type rdf:resource="&owl;TransitiveProperty"/>
   <rdfs:domain rdf:resource="#Region"/>
   <rdfs:range  rdf:resource="#Region"/>
 </owl:ObjectProperty>
-\end{verbatimtab}
+\end{verbatim}
 
 OWL Lite is a simplified subset of OWL for tool developers, with some features from OWL, supporting class hierarchies and constraints. However, many features and constructs from OWL are not found in OWL Lite, such as owl:disjointWith.
 
@@ -44,6 +44,37 @@ OWL 2 has several new constructs, such as qualified cardinality restrictions, ro
 \item Ontology modelling application scenario
 
 \begin{enumerate}
+
+\item Prepare a brief project documentation describing your work on the tasks b – f.
+Your documentation should contain the following information:
+	\begin{itemize}
+		\item Time spent on solving each task (person hours).
+			\begin{enumerate}
+			\item[(a)]
+			\item[(b)]
+			\item[(c)]
+			\item[(d)]
+			\item[(e)]
+			\item[(f)]
+			\end{enumerate}
+		\item Time spent discussing each task with your teammate(s).
+			\begin{enumerate}
+			\item[(a)]
+			\item[(b)]
+			\item[(c)]
+			\item[(d)]
+			\item[(e)]
+			\item[(f)]
+			\end{enumerate}
+		\item Difficulties encountered.
+		\item If you encountered difficulties: How did you solve them? How long did it take you
+to solve the difficulties (person hours)? Difficulties could be technical issues with
+the software used, understandability of the assignment, communication issues
+with your teammates, etc...
+		\item If you needed to apply changes (e.g. while building your ontology you realized
+that some competency questions do not work in your scenario, and you needed to
+rework your competency questions), document that.
+	\end{itemize}
 
 \item Competency questions: Write down at least 20 competency questions which the intended application should be able to answer on the basis of the ontology.
 
@@ -104,8 +135,6 @@ Mindmap created with Freemind:
     \includegraphics[scale=0.7]{Faculty_mindmap.png}
 \end{figure}
 
-
-
 \item Ontology engineering: Derive from the mindmaps an ontology containing some first classes. Use a ontology editor for this task, e.g., Protégé(http://protege.stanford.edu/). Add labels in English and German language to each concept of your ontology
 
 \textbf{Answer:}
@@ -118,7 +147,10 @@ Ontology created with Protégé. Please see ex8.owl for the OWL/XML markup. The 
     \includegraphics[scale=0.7]{owl_graph.png}
 \end{figure}
 
-
+\item Go to the Watson Website (http://watson.kmi.open.ac.uk/WatsonWUI/) and
+search for existing ontologies modeling the same or similar concepts as you have
+in your ontology. Refine your ontology by reusing concepts and relationships of
+the found ontologies.
 \end{enumerate}
 
 \end{enumerate}
