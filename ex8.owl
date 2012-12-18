@@ -317,6 +317,10 @@
         <Class IRI="#Room"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Freitag</Literal>
+        </Annotation>
         <Class abbreviatedIRI=":Thing"/>
         <NamedIndividual IRI="#Friday"/>
     </ClassAssertion>
@@ -494,13 +498,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Capacity100Course</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Kurs - 100 Personen Kapazität</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Capacity10Course</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Course - 10 Person Capacity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Capacity10Course</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Kurs - 10 Personen Kapazität</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Capacity50Course</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Course - 50 Person Capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Capacity50Course</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Kurs - 50 Personen Kapazität</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -545,6 +564,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FacultyMember</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Mitarbeiter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FacultyResource</IRI>
         <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Einrichtungsresource</Literal>
     </AnnotationAssertion>
@@ -571,6 +595,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PC</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PC</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PC resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -590,6 +619,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Projector</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Projektor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Room</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Raum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Room</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Room resource</Literal>
     </AnnotationAssertion>
@@ -602,6 +641,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Seminar</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Seminar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Student</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Student</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
