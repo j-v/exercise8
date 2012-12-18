@@ -4,6 +4,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{moreverb}
 
 \setlength{\parindent}{0pt}
 
@@ -24,15 +25,21 @@ then between OWL Lite, OWL DL, OWL Full and OWL 2. Create some simple
 examples to illustrate the difference.
 
 \textbf{Answer:}
-OWL is more expressive than RDFS: with OWL we can define relations between classes, constraints and cardinalities, equivalences of classes and properties, create properties of properties, use boolean combinations and other expressive constructs (e.g. disjointnes, inverse properties, property restrictions, enumerations). Also, special properties can be expressed, namely transitive, symmetric, functional, and inverse functional properties. However, some RDF markup is preserved in OWL, and instances of classes are declared in RDF.
+OWL is more expressive than RDFS: with OWL we can define relations between classes, constraints and cardinalities, equivalences of classes and properties, create properties of properties, use boolean combinations and other expressive constructs (e.g. disjointnes, inverse properties, property restrictions, enumerations). Also, special properties can be expressed, namely transitive, symmetric, functional, and inverse functional properties. However, some RDF markup is preserved in OWL, and instances of classes are declared in RDF. An example of a transitive property that cannot be expressed in RDFS:
 
-OWL Lite is a simplified subset of OWL for tool developers, with some features from OWL, supporting class hierarchies and constraints.
+\begin{verbatimtab}
+<owl:ObjectProperty rdf:ID="subRegionOf">
+  <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+  <rdfs:domain rdf:resource="#Region"/>
+  <rdfs:range  rdf:resource="#Region"/>
+</owl:ObjectProperty>
+\end{verbatimtab}
+
+OWL Lite is a simplified subset of OWL for tool developers, with some features from OWL, supporting class hierarchies and constraints. However, many features and constructs from OWL are not found in OWL Lite, such as owl:disjointWith.
 
 OWL DL: DL stands for description logic. It is restricted compared to OWL Full in that classes cannot be simultaneously be properties and individuals, and properties cannot simultaneouly be individuals. This is called vocabulary partitioning. As well, the set of object properties and data type properties are disjoint in DL. DL also requires explicit typing. No transitive cardinality constraints can exist in OWL DL. Another difference is that there are some restrictions placed on the usage of anonymous classes.
 
-OWL 2 has several new constructs, such as qualified cardinality restrictions, role chains, and expressive data predicates. It has some different syntaxes, and targets the XML technology toolchain with OWL/XML, which is a new non-RDF XML syntax. It has added features for supporting datatypes, metamodelling, annotation, and database style keys. Property chains are also introduced: for example saying that { ?x ex:uncle ?y } is equivalent to { ?x ex:parent ?z . ?z ex:brother ?y . }
-
-\textbf{TODO Add examples}
+OWL 2 has several new constructs, such as qualified cardinality restrictions, role chains, and expressive data predicates. It has some different syntaxes, and targets the XML technology toolchain with OWL/XML, which is a new non-RDF XML syntax. It has added features for supporting datatypes, metamodelling, annotation, and database style keys. Property chains are also introduced: for example saying that \textbf{\{ ?x ex:uncle ?y \}} is equivalent to \textbf{\{ ?x ex:parent ?z . ?z ex:brother ?y . \}} can be expressed as a property chain.
 
 \item Ontology modelling application scenario
 
