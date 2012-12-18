@@ -519,9 +519,29 @@
         <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Kurs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseTime</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Time of a Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DayOfWeek</IRI>
         <Literal datatypeIRI="&xsd;string">One of the days of the week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DayOfWeek</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Day of the Week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FacultyMember</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Faculty Member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FacultyResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Faculty resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -535,6 +555,31 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lecturer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Lecturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PC</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PC resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Projector</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Projector resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Room</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Room resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Seminar</IRI>
         <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Seminar</Literal>
     </AnnotationAssertion>
@@ -544,9 +589,24 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Seminar</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Student</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TimePeriod</IRI>
         <Literal datatypeIRI="&xsd;string">A period in time defined by it&#39;s start and end dates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TimePeriod</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Time period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tutor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tutor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
