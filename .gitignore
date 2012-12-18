@@ -1,3 +1,7 @@
 *~
 *.sw[a-z]
 catalog*.xml
+*.log
+*.aux
+*.gz
+
