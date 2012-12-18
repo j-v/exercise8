@@ -1,0 +1,61 @@
+1. Please describe in your own words the difference between RDFS amd OWL, and 
+then between OWL Lite, OWL DL, OWL Full and OWL 2. Create some simple 
+examples to illustrate the difference.
+
+OWL is more expressive than RDFS: defines relations between classes, constraints and cardinalities, equivalences of classes and properties, allows properties of properties, boolean combinations and other expressive constructs (disjointnes, inverse properties, property restrictions, enumerations). Also special properties: transitive, symmetric, functional, inverse functional. However, some RDF markup is preserved in OWL, and instances of classes are declared in RDF.
+
+OWL Lite: simplified for tool developers, with some features from OWL, supporting class hierarchies and constraints
+
+OWL DL: DL stands for description logic. It is restricted compared to OWL Full in that classes cannot be properties and individuals, and properties cannot be individuals. (Vocabulary partitioning) (?) The set of object properties and data type properties are disjoint in DL. (example?) DL also requires explicit typing. No transitive cardinality constraints can exist in OWL DL. There are restrictions placed on the usage of anonymous classes.
+
+OWL 2 has several new constructs, such as qualified cardinality restrictions, role chains, and expressive data predicates. It has some different syntaxes, and targets the XML technology toolchain with OWL/XML. It has added features for supporting datatypes, metamodelling, annotation, and database style keys. 	
+
+
+2. 
+
+b) Competency questions: Write down at least 20 competency questions which the intended application should be able to answer on the basis of the ontology.
+
+1. For a given course, who is the lecturer or tutor?
+2. How many students are enrolled in a given class?
+3. Where and when is a lecture given?
+4. What are the names of the courses a given student is enrolled in?
+5. Which lectures occur on a given day of the week?
+6. What are the names of the students enrolled for a given course?
+7. How many times does a course occur per week?
+8. How many instructors are there for a given course?
+9. Who is allowed to loan a given faculty resource (e.g. room, projector, PC...)
+10. For a given room, what dates is it booked for?
+11. What is the maximum loan period for a given faculty resource?
+12. Is a resource currently on loan?
+14. What is the capacity of a given course?
+15. Is a given course a lecture or a seminar?
+16. What prior courses are required for a student to participate in a given courses?
+17. Which courses is a student eligible to enroll for?
+18. For a given student, which courses need to be completed before they can enroll in a certain course?
+19. Which resources is a given person allowed to loan?
+20. Is a particular resource loanable?
+
+
+c)  Glossary: Extract key terms from the competency questions which frequently occur and are of importance for the given application domain. 
+
+Course
+Lecturer
+Tutor
+Student
+Course Name
+Course capacity
+Loan period
+Booked dates
+Lecture 
+Seminar
+Required courses
+Loanability
+
+d)  Mindmap: Create mindmaps to model the relationships between the key terms of your glossary in a light-weight way. 
+
+SEE PICTURE
+
+e)  Ontology engineering: Derive from the mindmaps an ontology containing some first classes. Use a ontology editor for this task, e.g., Protégé(http://protege.stanford.edu/). Add labels in English and German language to each concept of your ontology
+
+SEE owl file
+TODO: Add German labels
