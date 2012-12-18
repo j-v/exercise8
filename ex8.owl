@@ -535,8 +535,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DayOfWeek</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Werktag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FacultyMember</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Faculty Member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FacultyResource</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Einrichtungsresource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -562,6 +572,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PC</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PC resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -602,6 +617,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TimePeriod</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Time period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TimePeriod</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Zeitraum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
