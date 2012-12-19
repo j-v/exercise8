@@ -45,7 +45,7 @@ OWL 2 has several new constructs, such as qualified cardinality restrictions, ro
 
 \begin{enumerate}
 
-\item Prepare a brief project documentation describing your work on the tasks b – f.
+\item Prepare a brief project documentation describing your work on the tasks b -– f.
 Your documentation should contain the following information:
 	\begin{itemize}
 		\item Time spent on solving each task (person hours).
@@ -65,10 +65,17 @@ Your documentation should contain the following information:
 			\item[(f)] 20 minutes
 			\end{enumerate}
 		\item Difficulties encountered.
+			\begin{enumerate}
+			\item When making the ontology in Protege, the software would sometimes crash when we tried to run the reasoner. And, if it didn't crash, it would sometimes yield unexpected results. Namely, an individual from class A, defined as disjoint from anotherclass B, would be inferred to be from class B anyway.
+			\end{enumerate}
 		\item If you encountered difficulties: How did you solve them? How long did it take you
 to solve the difficulties (person hours)? Difficulties could be technical issues with
 the software used, understandability of the assignment, communication issues
 with your teammates, etc...
+			\begin{enumerate}
+			\item Eventually we abandoned the reasoner in Protege and stopped creating individuals, as everything else appeared to work as expected, and the reasonser is not necessary for the assignment. This took about an hour.
+			\item It was difficult to figure out a way to model different class sizes, allowing each class to have a different maximum size but without making a new subclass every time. It was thought about and we settled on a compromise, creating a few subclasses representing different sizes (10, 50, and 100 students) which can be used for any number of courses. This took about half an hour.
+			\end{enumerate}
 		\item If you needed to apply changes (e.g. while building your ontology you realized
 that some competency questions do not work in your scenario, and you needed to
 rework your competency questions), document that.
@@ -151,6 +158,7 @@ in your ontology. Refine your ontology by reusing concepts and relationships of
 the found ontologies.
 \end{enumerate}
 
+We were not able to find any existing ontology close enough to our own to be easily adaptable. However, maybe it would be possible to model "temporal events" such as meetings and generic time intervals, as done in (http://daml.umbc.edu/ontologies/cobra/0.4/academia).
 \end{enumerate}
 
 
